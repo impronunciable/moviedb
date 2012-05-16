@@ -1,0 +1,78 @@
+{
+    "base_url": "http://api.themoviedb.org/3/"
+  , "configuration" : "configuration"
+  , "authentication" : {
+        "requestToken" : "authentication/token/new"
+      , "sessionId" : "authentication/session/new"
+    }
+  , "methods" : {
+        "search" : {
+            "get" : {
+                "Movie" : "search/movie"
+              , "Person" : "search/person"
+            }
+          , "post" : {
+            }
+        }
+      , "collection" : {
+            "get" : {
+                "Info" : "collection/:id"
+            }
+          , "post" : {
+            }
+        }
+      , "movie" : {
+            "get" : {
+                "Info" : "movie/:id"
+              , "AlternativeTitles" : "movie/:id/alternative_titles"
+              , "Casts" : "movie/:id/casts"
+              , "Images" : "movie/:id/images"
+              , "Keywords" : "movie/:id/keywords"
+              , "Releases" : "movie/:id/releases"
+              , "Trailers" : "movie/:id/trailers"
+              , "Translations" : "movie/:id/translations"
+              , "Similar" : "movie/:id/similar_movies"
+            }
+          , "post" : {
+            }
+        }
+      , "person" : {
+            "get" : {
+                "Info" : "person/:id"
+              , "Credits" : "person/:id/credits"
+              , "Images" : "person/:id/images"
+            }
+          , "post" : {
+            }
+        }
+      , "misc" : {
+            "get" : {
+                "LatestMovie" : "latest/movie"
+              , "NowPlaying" : "movie/now-playing"
+              , "PopularMovies" : "movie/popular"
+              , "TopRatedMovies" : "movie/top-rated"
+            }
+          , "post" : {
+                "AddMovieRating" : "movie/:id/rating"
+            }
+        }
+      , "company" : {
+            "get" : {
+                "Info" : "company/:id"
+              , "Movies" : "company/:id/movies"
+            }
+          , "post" : {
+            }
+        }
+      , "account" : {
+            "get" : {
+                "Info" : "account"
+              , "FavoriteMovies" : "account/:id/favorite_movies"
+              , "RatedMovies" : "account/:id/rated_movies"
+            }
+          , "post" : {
+                "AddFavorite" : "account/:id/favorite"
+            }
+        }
+    }
+}

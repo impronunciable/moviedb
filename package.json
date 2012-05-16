@@ -1,0 +1,10 @@
+{
+    "name" : "moviedb"
+  , "version" : "0.0.1"
+  , "dependencies" : {
+        "superagent" : "0.4.x"
+    }
+  , "devDependencies" : {
+        "mocha" : "1.0.x"
+    }
+}
