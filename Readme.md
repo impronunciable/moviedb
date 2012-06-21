@@ -39,7 +39,7 @@ All themoviedb.org API v3 methods included (I have plans to change this method n
 |:-----------:|:------------:|
 | searchMovie | search/movie |
 | searchPerson | search/person |
-| collectionInfo | collection/:id /
+| collectionInfo | collection/:id |
 | movieInfo | movie/:id |
 | movieAlternativeTitles | movie/:id/alternative_titles |
 | movieCasts | movie/:id/casts |
