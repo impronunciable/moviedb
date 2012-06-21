@@ -1,6 +1,11 @@
 {
     "name" : "moviedb"
+  , "description" : "Library for interacting with themoviedb.com API"
   , "version" : "0.0.1"
+  , "keywords" : ["themoviedb","api"]
+  , "directories" : { "lib" : "./lib" }
+  , "main" : "index.js"
+  , "author" : "Dan Zajdband <dan.zajdband@gmail.com>"
   , "dependencies" : {
         "superagent" : "0.4.x"
     }
