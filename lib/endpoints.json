@@ -1,12 +1,14 @@
 {
     "base_url": "http://api.themoviedb.org/3/"
-  , "configuration" : "configuration"
   , "authentication" : {
         "requestToken" : "authentication/token/new"
       , "sessionId" : "authentication/session/new"
     }
   , "methods" : {
-        "search" : {
+        "configuration" : {
+            "": { "resource":"configuration", "method": "get" }
+        }
+      , "search" : {
             "Movie" : { "resource": "search/movie", "method": "get" } 
           , "Person"  : { "resource": "search/person", "method": "get" }
         }
