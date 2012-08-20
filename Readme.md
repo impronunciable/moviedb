@@ -8,13 +8,9 @@ node.js library that makes the interaction with themoviedb.org V3 API easy.
 
 ## How to use
 
-Require MovieDB
+Require MovieDB and provide your themoviedb.org API KEY
 
-    var MovieDB = require('moviedb');
-
-Create a MovieDB object with your themoviedb.org API KEY
- 
-    var mdb = new MovieDB('your moviedb api key');
+    var MovieDB = require('moviedb')('your api key');
 
 Use the api methods as you want, for example:
 
@@ -24,12 +20,17 @@ Use the api methods as you want, for example:
 
 or
 
-
     mdb.movieInfo({id: 666}, function(err, res){
       console.log(res);
     });
 
+now you can also make chain calls
 
+   mdb.searchMovie({query: 'Zoolander' }, function(err, res){
+      console.log(res);
+    }).movieInfo({id: 123}, function(err, res){
+      console.log(res);
+    });
 
 ## Available methods
 
@@ -37,6 +38,7 @@ All themoviedb.org API v3 methods included (I have plans to change this method n
 
 | Method      | API url  |
 |:-----------:|:------------:|
+| configuration | configuration |
 | searchMovie | search/movie |
 | searchPerson | search/person |
 | collectionInfo | collection/:id |
