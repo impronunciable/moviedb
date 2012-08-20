@@ -26,7 +26,7 @@ or
 
 now you can also make chain calls
 
-   mdb.searchMovie({query: 'Zoolander' }, function(err, res){
+    mdb.searchMovie({query: 'Zoolander' }, function(err, res){
       console.log(res);
     }).movieInfo({id: 123}, function(err, res){
       console.log(res);
