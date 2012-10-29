@@ -1,8 +1,10 @@
-var mdb = require('./lib/moviedb');
+var mdb = require('./lib/moviedb')('dc4940972c268b026150cf7be6f01d11');
 
-var m = new mdb('dc4940972c268b026150cf7be6f01d11');
-
-m.searchMovie({query: 'alien'}, function(err, res){
+mdb.movieInfo({id: 11}, function(err, res){
+  console.log('--------','popular');
+  console.log(res);
+}).miscPopularMovies({}, function(err, res){
   console.log(err);
- console.log(res);
+  console.log('--------','ninja');
+  console.log(res);
 });
