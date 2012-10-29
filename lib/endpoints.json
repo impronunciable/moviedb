@@ -1,5 +1,5 @@
 {
-    "base_url": "http://api.themoviedb.org/3/"
+    "base_url": "https://api.themoviedb.org/3/"
   , "authentication" : {
         "requestToken" : "authentication/token/new"
       , "sessionId" : "authentication/session/new"
