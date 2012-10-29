@@ -7,7 +7,7 @@
   , "main" : "index.js"
   , "author" : "Dan Zajdband <dan.zajdband@gmail.com>"
   , "dependencies" : {
-        "superagent" : "0.8.x"
+        "superagent" : "0.9.7"
     }
   , "devDependencies" : {
         "mocha" : "1.0.x"
