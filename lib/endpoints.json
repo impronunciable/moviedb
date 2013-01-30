@@ -23,7 +23,7 @@
       , "movie" : {
             "Info" : { "resource": "movie/:id", "method": "get" }
           , "AlternativeTitles" : { "resource": "movie/:id/alternative_titles", "method": "get" }
-          , "Casts" : { "recource": "movie/:id/casts", "method": "get" }
+          , "Casts" : { "resource": "movie/:id/casts", "method": "get" }
           , "Images" : { "resource": "movie/:id/images", "method": "get" }
           , "Keywords" : { "resource": "movie/:id/keywords", "method": "get" }
           , "Releases" : { "resourse":"movie/:id/releases", "method": "get" }
