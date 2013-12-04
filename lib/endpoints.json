@@ -26,7 +26,7 @@
           , "Casts" : { "resource": "movie/:id/casts", "method": "get" }
           , "Images" : { "resource": "movie/:id/images", "method": "get" }
           , "Keywords" : { "resource": "movie/:id/keywords", "method": "get" }
-          , "Releases" : { "resourse":"movie/:id/releases", "method": "get" }
+          , "Releases" : { "resource":"movie/:id/releases", "method": "get" }
           , "Trailers" : { "resource": "movie/:id/trailers", "method": "get" }
           , "Translations" : { "resource": "movie/:id/translations", "method": "get" }
           , "Similar" : { "resource": "movie/:id/similar_movies", "method": "get" }
