@@ -8,6 +8,9 @@
         "configuration" : {
             "": { "resource":"configuration", "method": "get" }
         }
+      , "find" : {
+            "" : { "resource": "find/:id", "method": "get" }
+      	}
       , "search" : {
             "Movie" : { "resource": "search/movie", "method": "get" } 
           , "Collection"  : { "resource": "search/collection", "method": "get" }
@@ -23,16 +26,24 @@
       , "movie" : {
             "Info" : { "resource": "movie/:id", "method": "get" }
           , "AlternativeTitles" : { "resource": "movie/:id/alternative_titles", "method": "get" }
-          , "Casts" : { "resource": "movie/:id/casts", "method": "get" }
+          , "Credits" : { "resource": "movie/:id/credits", "method": "get" }
           , "Images" : { "resource": "movie/:id/images", "method": "get" }
           , "Keywords" : { "resource": "movie/:id/keywords", "method": "get" }
-          , "Releases" : { "resourse":"movie/:id/releases", "method": "get" }
+          , "Releases" : { "resource":"movie/:id/releases", "method": "get" }
           , "Trailers" : { "resource": "movie/:id/trailers", "method": "get" }
           , "Translations" : { "resource": "movie/:id/translations", "method": "get" }
           , "Similar" : { "resource": "movie/:id/similar_movies", "method": "get" }
+          , "Reviews" : { "resource": "movie/:id/reviews", "method": "get" }
           , "Lists" : { "resource": "movie/:id/lists", "method": "get" }
           , "Changes" : { "resource": "movie/:id/changes", "method": "get" }
           , "RatingUpdate" : { "resource": "movie/:id/rating", "method": "post" }
+        }
+      , "tv" : {
+            "Info" : { "resource": "tv/:id", "method": "get" }
+          , "Credits" : { "resource": "tv/:id/credits", "method": "get" }
+          , "ExternalIds" : { "resource": "tv/:id/external_ids", "method": "get" }
+          , "Images" : { "resource": "tv/:id/images", "method": "get" }
+          , "Translations" : { "resource": "tv/:id/translations", "method": "get" }
         }
       , "person" : {
             "Info" : { "resource": "person/:id", "method": "get" }
@@ -73,6 +84,8 @@
           , "TopRatedMovies" : { "resource": "movie/top_rated", "method": "get" }
           , "ChangedMovies" : { "resource": "movie/changes", "method": "get" }
           , "ChangedPeople" : { "resource": "person/changes", "method": "get" }
+          , "TopRatedTvs" : { "resource": "tv/top_rated", "method": "get" }
+          , "PopularTvs" : { "resource": "tv/popular", "method": "get" }
       }
     }
 }
