@@ -48,14 +48,14 @@ All themoviedb.org API v3 methods included (I have plans to change this method n
 | movieImages | movie/:id/keywords |
 | movieKeywords | movie/:id/keywords |
 | movieReleases | movie/:id/releases |
-| movieTrailers | movue/:id/trailers |
+| movieTrailers | movie/:id/trailers |
 | movieTranslations | movie/:id/translations |
 | movieSimilar | movie/:id/similar_movies |
 | personInfo | person/:id |
 | personCredits | person/:id/credits |
 | personImages | person/:id/images |
 | miscLatestMovie | latest/movie |
-| miscNowPlaying | movue/now-playing |
+| miscNowPlaying | movie/now-playing |
 | miscPopularMovies | movie/popular |
 | miscTopRatedMovies | movie/top-rated |
 | miscAddMovieRating | movie/:id/rating |
