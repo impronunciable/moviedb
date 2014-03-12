@@ -44,6 +44,14 @@
           , "ExternalIds" : { "resource": "tv/:id/external_ids", "method": "get" }
           , "Images" : { "resource": "tv/:id/images", "method": "get" }
           , "Translations" : { "resource": "tv/:id/translations", "method": "get" }
+          , "SeasonInfo" : { "resource": "tv/:id/season/:season_number", "method": "get" }
+          , "SeasonCredits" : { "resource": "tv/:id/season/:season_number/credits", "method": "get" }
+          , "SeasonExternalIds" : { "resource": "tv/:id/season/:season_number/external_ids", "method": "get" }
+          , "SeasonImages" : { "resource": "tv/:id/season/:season_number/images", "method": "get" }
+          , "EpisodeInfo" : { "resource": "tv/:id/season/:season_number/episode/:episode_number", "method": "get" }
+          , "EpisodeCredits" : { "resource": "tv/:id/season/:season_number/episode/:episode_number/credits", "method": "get" }
+          , "EpisodeExternalIds" : { "resource": "tv/:id/season/:season_number/episode/:episode_number/external_ids", "method": "get" }
+          , "EpisodeImages" : { "resource": "tv/:id/season/:season_number/episode/:episode_number/images", "method": "get" }
         }
       , "person" : {
             "Info" : { "resource": "person/:id", "method": "get" }
