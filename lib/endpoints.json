@@ -13,6 +13,7 @@
       	}
       , "search" : {
             "Movie" : { "resource": "search/movie", "method": "get" } 
+          , "Tv" : { "resource": "search/tv", "method": "get" } 
           , "Collection"  : { "resource": "search/collection", "method": "get" }
           , "Person"  : { "resource": "search/person", "method": "get" }
           , "List"  : { "resource": "search/list", "method": "get" }
