@@ -1,3 +1,9 @@
+0.1.3 / 2014-05-09
+==================
+
+  * Updated superagent. Now compatible with browserify.
+
+
 0.1.3 / 2014-04-27
 ==================
 
