@@ -12,8 +12,8 @@
             "" : { "resource": "find/:id", "method": "get" }
       	}
       , "search" : {
-            "Movie" : { "resource": "search/movie", "method": "get" } 
-          , "Tv" : { "resource": "search/tv", "method": "get" } 
+            "Movie" : { "resource": "search/movie", "method": "get" }
+          , "Tv" : { "resource": "search/tv", "method": "get" }
           , "Collection"  : { "resource": "search/collection", "method": "get" }
           , "Person"  : { "resource": "search/person", "method": "get" }
           , "List"  : { "resource": "search/list", "method": "get" }
@@ -24,6 +24,10 @@
             "Info"  : { "resource": "collection/:id", "method": "get" }
           , "Images"  : { "resource": "collection/:id/images", "method": "get" }
         }
+      , "discover" : {
+            "Movie" : { "resource": "discover/movie", "method": "get" }
+          , "Tv" : { "resource": "discover/tv", "method": "get"}
+      }
       , "movie" : {
             "Info" : { "resource": "movie/:id", "method": "get" }
           , "AlternativeTitles" : { "resource": "movie/:id/alternative_titles", "method": "get" }
@@ -89,7 +93,7 @@
             "LatestMovies"  : { "resource": "movie/latest", "method": "get" }
           , "UpcomingMovies" : { "resource": "movie/upcoming", "method": "get" }
           , "NowPlayingMovies" : { "resource": "movie/now_playing", "method": "get" }
-          , "PopularMovies" : { "resource": "movie/popular", "method": "get" } 
+          , "PopularMovies" : { "resource": "movie/popular", "method": "get" }
           , "TopRatedMovies" : { "resource": "movie/top_rated", "method": "get" }
           , "ChangedMovies" : { "resource": "movie/changes", "method": "get" }
           , "ChangedPeople" : { "resource": "person/changes", "method": "get" }
