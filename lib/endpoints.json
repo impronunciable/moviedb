@@ -26,7 +26,7 @@
         }
       , "discover" : {
             "Movie" : { "resource": "discover/movie", "method": "get" }
-          , "Tv" : { "resource": "discover/tv", "method": "get"}
+          , "Tv" : { "resource": "discover/tv", "method": "get" }
       }
       , "movie" : {
             "Info" : { "resource": "movie/:id", "method": "get" }
