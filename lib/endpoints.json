@@ -60,6 +60,7 @@
           , "Images" : { "resource": "person/:id/images", "method": "get" }
           , "Changes" : { "resource": "person/:id/changes", "method": "get" }
           , "Latest" : { "resource": "person/latest", "method": "get" }
+          , "Popular" : { "resource": "person/popular", "method": "get" }
         }
       , "list" : {
             "Info" : { "resource": "list/:id", "method": "get" }
