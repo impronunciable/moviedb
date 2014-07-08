@@ -1,4 +1,10 @@
-0.1.3 / 2014-05-09
+0.1.5 / 2014-07-08
+==================
+
+  * Added Person endpoint.
+
+
+0.1.4 / 2014-05-09
 ==================
 
   * Updated superagent. Now compatible with browserify.
