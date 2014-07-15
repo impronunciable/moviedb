@@ -40,6 +40,7 @@ All themoviedb.org API v3 methods included (I have plans to change this method n
 |:-----------:|:------------:|
 | configuration | configuration |
 | searchMovie | search/movie |
+| searchMulti | search/multi |
 | searchPerson | search/person |
 | collectionInfo | collection/:id |
 | movieInfo | movie/:id |
