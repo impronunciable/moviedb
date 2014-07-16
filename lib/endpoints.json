@@ -34,6 +34,7 @@
           , "AlternativeTitles" : { "resource": "movie/:id/alternative_titles", "method": "get" }
           , "Credits" : { "resource": "movie/:id/credits", "method": "get" }
           , "Images" : { "resource": "movie/:id/images", "method": "get" }
+          , "Videos" : { "resource": "movie/:id/videos", "method": "get" }
           , "Keywords" : { "resource": "movie/:id/keywords", "method": "get" }
           , "Releases" : { "resource":"movie/:id/releases", "method": "get" }
           , "Trailers" : { "resource": "movie/:id/trailers", "method": "get" }
