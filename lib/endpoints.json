@@ -14,6 +14,7 @@
       , "search" : {
             "Movie" : { "resource": "search/movie", "method": "get" }
           , "Tv" : { "resource": "search/tv", "method": "get" }
+          , "Multi" : { "resource": "search/multi", "method": "get" }
           , "Collection"  : { "resource": "search/collection", "method": "get" }
           , "Person"  : { "resource": "search/person", "method": "get" }
           , "List"  : { "resource": "search/list", "method": "get" }
@@ -33,6 +34,7 @@
           , "AlternativeTitles" : { "resource": "movie/:id/alternative_titles", "method": "get" }
           , "Credits" : { "resource": "movie/:id/credits", "method": "get" }
           , "Images" : { "resource": "movie/:id/images", "method": "get" }
+          , "Videos" : { "resource": "movie/:id/videos", "method": "get" }
           , "Keywords" : { "resource": "movie/:id/keywords", "method": "get" }
           , "Releases" : { "resource":"movie/:id/releases", "method": "get" }
           , "Trailers" : { "resource": "movie/:id/trailers", "method": "get" }
