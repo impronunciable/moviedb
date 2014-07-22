@@ -45,7 +45,7 @@ All themoviedb.org API v3 methods included (I have plans to change this method n
 | collectionInfo | collection/:id |
 | movieInfo | movie/:id |
 | movieAlternativeTitles | movie/:id/alternative_titles |
-| movieCasts | movie/:id/casts |
+| movieCredits | movie/:id/credits |
 | movieImages | movie/:id/images |
 | movieVideos | movie/:id/videos |
 | movieKeywords | movie/:id/keywords |
