@@ -1,3 +1,11 @@
+0.1.7 / 2014-07-27
+==================
+
+  * Added Multi endpoint
+  * Error handling
+  * Movie credits endpoint
+
+
 0.1.6 / 2014-07-08
 ==================
 
