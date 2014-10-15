@@ -1,15 +1,20 @@
 {
-    "name" : "moviedb"
-  , "description" : "Library for interacting with themoviedb.com API"
-  , "version" : "0.1.8"
-  , "keywords" : ["themoviedb","api"]
-  , "directories" : { "lib" : "./lib" }
-  , "main" : "index.js"
-  , "author" : "Dan Zajdband <dan.zajdband@gmail.com>"
-  , "dependencies" : {
-        "superagent": "^0.18.0"
-    }
-  , "devDependencies" : {
-        "mocha" : "1.0.x"
-    }
+  "name": "moviedb",
+  "description": "Library for interacting with themoviedb.com API",
+  "version": "0.1.9",
+  "keywords": [
+    "themoviedb",
+    "api"
+  ],
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "index.js",
+  "author": "Dan Zajdband <dan.zajdband@gmail.com>",
+  "dependencies": {
+    "superagent": "0.20.0"
+  },
+  "devDependencies": {
+    "mocha": "1.0.x"
+  }
 }

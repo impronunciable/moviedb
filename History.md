@@ -1,3 +1,9 @@
+0.1.9 / 2014-10-15
+==================
+
+  * Error handling for bad API keys request
+  * Updated dependency
+
 0.1.7 / 2014-07-27
 ==================
 
