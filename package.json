@@ -1,7 +1,7 @@
 {
   "name": "moviedb",
   "description": "Library for interacting with themoviedb.com API",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "keywords": [
     "themoviedb",
     "api"
@@ -12,9 +12,6 @@
   "main": "index.js",
   "author": "Dan Zajdband <dan.zajdband@gmail.com>",
   "dependencies": {
-    "superagent": "0.20.0"
-  },
-  "devDependencies": {
-    "mocha": "1.0.x"
+    "superagent": "0.21.0"
   }
 }
