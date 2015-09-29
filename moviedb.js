@@ -55,6 +55,8 @@ module.exports={
           , "Credits" : { "resource": "tv/:id/credits", "method": "get" }
           , "ExternalIds" : { "resource": "tv/:id/external_ids", "method": "get" }
           , "Images" : { "resource": "tv/:id/images", "method": "get" }
+          , "Videos" : { "resource": "tv/:id/videos", "method": "get" }
+          , "Similar" : { "resource": "tv/:id/similar", "method": "get" }
           , "Translations" : { "resource": "tv/:id/translations", "method": "get" }
           , "SeasonInfo" : { "resource": "tv/:id/season/:season_number", "method": "get" }
           , "SeasonCredits" : { "resource": "tv/:id/season/:season_number/credits", "method": "get" }
