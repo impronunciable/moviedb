@@ -68,6 +68,7 @@ module.exports={
       , "person" : {
             "Info" : { "resource": "person/:id", "method": "get" }
           , "Credits" : { "resource": "person/:id/credits", "method": "get" }
+          , "CombinedCredits" : {"resource":"person/:id/combined_credits", "method":"get"}
           , "Images" : { "resource": "person/:id/images", "method": "get" }
           , "Changes" : { "resource": "person/:id/changes", "method": "get" }
           , "Latest" : { "resource": "person/latest", "method": "get" }
@@ -179,10 +180,10 @@ Object.keys(endpoints.methods).forEach(function(method){
       if(!this.token || Date.now() > +new Date(this.token.expires_at)) {
         this.requestToken(function(){
           execMethod.call(self, met[m].method, params, met[m].resource, fn);
-        });    
+        });
       } else {
         execMethod.call(this, met[m].method, params, met[m].resource, fn);
-      } 
+      }
 
       return this;
     };
@@ -193,7 +194,7 @@ var execMethod = function(type, params, endpoint, fn){
   params = params || {};
   endpoint = endpoint.replace(':id', params.id).replace(':season_number', params.season_number).replace(':episode_number', params.episode_number);
   type = type.toUpperCase();
-  
+
   var req = request(type, endpoints.base_url + endpoint)
             .query({api_key : this.api_key})
             .set('Accept', 'application/json');
@@ -1467,7 +1468,7 @@ Emitter.prototype.hasListeners = function(event){
  * TODO: combatible error handling?
  */
 
-module.exports = function(arr, fn, initial){  
+module.exports = function(arr, fn, initial){
   var idx = 0;
   var len = arr.length;
   var curr = arguments.length == 3
@@ -1477,7 +1478,7 @@ module.exports = function(arr, fn, initial){
   while (idx < len) {
     curr = fn.call(null, curr, arr[idx], ++idx, arr);
   }
-  
+
   return curr;
 };
 },{}]},{},[1])(1)
