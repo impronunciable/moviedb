@@ -4,8 +4,18 @@
   "version": "0.2.0",
   "keywords": [
     "themoviedb",
-    "api"
+    "api",
+    "tmdb"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/impronunciable/moviedb.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/impronunciable/moviedb/issues"
+  },
+  "homepage": "https://github.com/impronunciable/moviedb#readme",
   "directories": {
     "lib": "./lib"
   },
