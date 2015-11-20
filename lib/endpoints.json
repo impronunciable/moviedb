@@ -61,6 +61,8 @@
           , "EpisodeCredits" : { "resource": "tv/:id/season/:season_number/episode/:episode_number/credits", "method": "get" }
           , "EpisodeExternalIds" : { "resource": "tv/:id/season/:season_number/episode/:episode_number/external_ids", "method": "get" }
           , "EpisodeImages" : { "resource": "tv/:id/season/:season_number/episode/:episode_number/images", "method": "get" }
+          , "OnTheAir" : { "resource": "tv/on_the_air", "method": "get" }
+          , "AiringToday" : { "resource": "tv/airing_today", "method": "get" }
         }
       , "person" : {
             "Info" : { "resource": "person/:id", "method": "get" }
