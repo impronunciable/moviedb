@@ -67,7 +67,23 @@ All themoviedb.org API v3 methods included (I have plans to change this method n
 | accountFavoriteMovies | account/:id/favorite_movies |
 | accoutRatedMovies | account/:id/rated_movies |
 | accountAddFavorite | account/:id/favorite |
-
+| tvInfo | tv/:id |
+| tvCredits  | tv/:id/credits |
+| tvExternalIds  | tv/:id/external_ids |
+| tvImages | tv/:id/images |
+| tvVideos | tv/:id/videos |
+| tvSimilar  | tv/:id/similar |
+| tvTranslations | tv/:id/translations |
+| tvSeasonInfo | tv/:id/season/:season_number |
+| tvSeasonCredits  | tv/:id/season/:season_number/credits |
+| tvSeasonExternalIds  | tv/:id/season/:season_number/external_ids |
+| tvSeasonImages | tv/:id/season/:season_number/images |
+| tvEpisodeInfo  | tv/:id/season/:season_number/episode/:episode_number |
+| tvEpisodeCredits | tv/:id/season/:season_number/episode/:episode_number/credits |
+| tvEpisodeExternalIds | tv/:id/season/:season_number/episode/:episode_number/external_ids |
+| tvEpisodeImages  | tv/:id/season/:season_number/episode/:episode_number/images |
+| tvOnTheAir | tv/on_the_air |
+| tvAiringToday  | tv/airing_today |
 ## License 
 
 (The MIT License)
