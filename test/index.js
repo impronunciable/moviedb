@@ -10,7 +10,7 @@ var api;
  * the proper way to run the test
  *
  * 		npm test --key='{your api key}'
- * 		
+ *
  * @param  {[type]} !apiKey ||            apiKey.length [description]
  * @return {[type]}         [description]
  */
@@ -60,5 +60,16 @@ describe('moviedb', function() {
 			done();
 		});
 	});
+
+    it ('should get the movie release dates', function(done) {
+        api.movieReleaseDates({id: 209112}, function(err, res) {
+            if (err) done(err);
+			res.should.be.an('object');
+			res.should.have.property('results');
+			res.results.should.be.an('array');
+            assert.equal(res.id, 209112);
+            done();
+        });
+    });
 
 });

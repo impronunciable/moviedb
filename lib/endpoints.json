@@ -37,6 +37,7 @@
           , "Videos" : { "resource": "movie/:id/videos", "method": "get" }
           , "Keywords" : { "resource": "movie/:id/keywords", "method": "get" }
           , "Releases" : { "resource":"movie/:id/releases", "method": "get" }
+          , "ReleaseDates" : { "resource":"movie/:id/release_dates", "method": "get" }
           , "Trailers" : { "resource": "movie/:id/trailers", "method": "get" }
           , "Translations" : { "resource": "movie/:id/translations", "method": "get" }
           , "Similar" : { "resource": "movie/:id/similar_movies", "method": "get" }
