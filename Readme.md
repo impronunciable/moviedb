@@ -50,6 +50,7 @@ All themoviedb.org API v3 methods included (I have plans to change this method n
 | movieVideos | movie/:id/videos |
 | movieKeywords | movie/:id/keywords |
 | movieReleases | movie/:id/releases |
+| movieReleaseDates | movie/:id/release_dates |
 | movieTrailers | movie/:id/trailers |
 | movieTranslations | movie/:id/translations |
 | movieSimilar | movie/:id/similar_movies |
@@ -84,7 +85,7 @@ All themoviedb.org API v3 methods included (I have plans to change this method n
 | tvEpisodeImages  | tv/:id/season/:season_number/episode/:episode_number/images |
 | tvOnTheAir | tv/on_the_air |
 | tvAiringToday  | tv/airing_today |
-## License 
+## License
 
 (The MIT License)
 
