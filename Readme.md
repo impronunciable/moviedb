@@ -34,56 +34,8 @@ now you can also make chain calls
 
 ## Available methods
 
-All themoviedb.org API v3 methods included (I have plans to change this method names, stay tuned):
+All themoviedb.org API v3 methods included. Endpoint methods are included on [a wiki page](https://github.com/impronunciable/moviedb/wiki/Library-endpoints):
 
-| Method      | API url  |
-|:-----------:|:------------:|
-| configuration | configuration |
-| searchMovie | search/movie |
-| searchMulti | search/multi |
-| searchPerson | search/person |
-| collectionInfo | collection/:id |
-| movieInfo | movie/:id |
-| movieAlternativeTitles | movie/:id/alternative_titles |
-| movieCredits | movie/:id/credits |
-| movieImages | movie/:id/images |
-| movieVideos | movie/:id/videos |
-| movieKeywords | movie/:id/keywords |
-| movieReleases | movie/:id/releases |
-| movieTrailers | movie/:id/trailers |
-| movieTranslations | movie/:id/translations |
-| movieSimilar | movie/:id/similar_movies |
-| personInfo | person/:id |
-| personCredits | person/:id/credits |
-| personImages | person/:id/images |
-| miscLatestMovies | latest/movie |
-| miscNowPlayingMovies | movie/now-playing |
-| miscPopularMovies | movie/popular |
-| miscTopRatedMovies | movie/top-rated |
-| miscAddMovieRating | movie/:id/rating |
-| companyInfo | company/:id |
-| companyMovies | company/:id/movies |
-| accountInfo | account |
-| accountFavoriteMovies | account/:id/favorite_movies |
-| accoutRatedMovies | account/:id/rated_movies |
-| accountAddFavorite | account/:id/favorite |
-| tvInfo | tv/:id |
-| tvCredits  | tv/:id/credits |
-| tvExternalIds  | tv/:id/external_ids |
-| tvImages | tv/:id/images |
-| tvVideos | tv/:id/videos |
-| tvSimilar  | tv/:id/similar |
-| tvTranslations | tv/:id/translations |
-| tvSeasonInfo | tv/:id/season/:season_number |
-| tvSeasonCredits  | tv/:id/season/:season_number/credits |
-| tvSeasonExternalIds  | tv/:id/season/:season_number/external_ids |
-| tvSeasonImages | tv/:id/season/:season_number/images |
-| tvEpisodeInfo  | tv/:id/season/:season_number/episode/:episode_number |
-| tvEpisodeCredits | tv/:id/season/:season_number/episode/:episode_number/credits |
-| tvEpisodeExternalIds | tv/:id/season/:season_number/episode/:episode_number/external_ids |
-| tvEpisodeImages  | tv/:id/season/:season_number/episode/:episode_number/images |
-| tvOnTheAir | tv/on_the_air |
-| tvAiringToday  | tv/airing_today |
 ## License 
 
 (The MIT License)
