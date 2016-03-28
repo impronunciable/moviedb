@@ -34,9 +34,10 @@ now you can also make chain calls
 
 ## Available methods
 
-All themoviedb.org API v3 methods included. Endpoint methods are included on [a wiki page](https://github.com/impronunciable/moviedb/wiki/Library-endpoints):
+All themoviedb.org API v3 methods included. Endpoint methods are included on [a wiki page](https://github.com/impronunciable/moviedb/wiki/Library-endpoints)
 
 ## License 
+=======
 
 (The MIT License)
 
