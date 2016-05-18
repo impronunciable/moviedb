@@ -67,9 +67,11 @@
         }
       , "person" : {
             "Info" : { "resource": "person/:id", "method": "get" }
-          , "Credits" : { "resource": "person/:id/credits", "method": "get" }
+          , "MovieCredits" : { "resource": "person/:id/movie_credits", "method": "get" }
+          , "TvCredits" : { "resource": "person/:id/tv_credits", "method": "get" }
           , "CombinedCredits" : { "resource": "person/:id/combined_credits", "method": "get" }
           , "Images" : { "resource": "person/:id/images", "method": "get" }
+          , "TaggedImages" : { "resource": "person/:id/tagged_images", "method": "get" }
           , "Changes" : { "resource": "person/:id/changes", "method": "get" }
           , "Latest" : { "resource": "person/latest", "method": "get" }
           , "Popular" : { "resource": "person/popular", "method": "get" }
@@ -78,7 +80,8 @@
             "Info" : { "resource": "list/:id", "method": "get" }
         }
       , "genre" : {
-            "List" : { "resource": "genre/list", "method": "get" }
+            "MovieList" : { "resource": "genre/movie/list", "method": "get" }
+          , "TvList" : { "resource": "genre/tv/list", "method": "get" }
           , "Movies" : { "resource": "genre/:id/movies", "method": "get" }
         }
       , "keyword" : {
