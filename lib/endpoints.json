@@ -98,8 +98,9 @@
           , "FavoriteMovies" : { "resource": "account/:id/favorite_movies", "method": "get" }
           , "FavoriteUpdate" : { "resource": "account/:id/favorite", "method": "post" }
           , "RatedMovies" : { "resource": "account/:id/rated_movies", "method": "get" }
-          , "MovieWatchlist" : { "resource": "account/:id/movie_watchlist", "method": "get" }
-          , "MovieWatchlistUpdate" : { "resource": "account/:id/movie_watchlist", "method": "post" }
+          , "MovieWatchlist" : { "resource": "account/:id/watchlist/movies", "method": "get" }
+          , "TvWatchlist" : { "resource": "account/:id/watchlist/tv", "method": "get" }
+          , "WatchlistUpdate" : { "resource": "account/:id/watchlist", "method": "post" }
         }
       , "misc" : {
             "LatestMovies"  : { "resource": "movie/latest", "method": "get" }
