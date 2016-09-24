@@ -109,6 +109,7 @@
           , "PopularMovies" : { "resource": "movie/popular", "method": "get" }
           , "TopRatedMovies" : { "resource": "movie/top_rated", "method": "get" }
           , "ChangedMovies" : { "resource": "movie/changes", "method": "get" }
+          , "ChangedTvs" : { "resource": "tv/changes", "method": "get" }
           , "ChangedPeople" : { "resource": "person/changes", "method": "get" }
           , "TopRatedTvs" : { "resource": "tv/top_rated", "method": "get" }
           , "PopularTvs" : { "resource": "tv/popular", "method": "get" }
