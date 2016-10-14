@@ -1,7 +1,7 @@
 {
   "name": "moviedb",
   "description": "Library for interacting with themoviedb.com API",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "scripts": {
     "test": "clear; make test"
   },
