@@ -1,4 +1,9 @@
-# MovieDB
+MovieDB
+=======
+[![Build Status](https://travis-ci.org/impronunciable/moviedb.svg?branch=master)](https://travis-ci.org/impronunciable/moviedb)
+[![NPM version](https://badge.fury.io/js/moviedb.svg)](http://badge.fury.io/js/moviedb)
+[![Dependency Status](https://img.shields.io/david/impronunciable/moviedb.svg)](https://david-dm.org/impronunciable/moviedb)
+[![npm](https://img.shields.io/npm/dm/moviedb.svg?maxAge=2592000)]()
 
 node.js library that makes the interaction with themoviedb.org V3 API easy.
 
