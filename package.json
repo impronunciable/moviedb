@@ -25,11 +25,11 @@
   "main": "index.js",
   "author": "Dan Zajdband <dan.zajdband@gmail.com>",
   "dependencies": {
-    "superagent": "^1.6.1"
+    "superagent": "^2.3.0"
   },
   "devDependencies": {
-    "chai": "^3.4.1",
+    "chai": "^3.5.0",
     "colors": "^1.1.2",
-    "mocha": "^2.3.4"
+    "mocha": "^3.1.2"
   }
 }
