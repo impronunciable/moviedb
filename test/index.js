@@ -1,7 +1,7 @@
 var should = require('chai').should();
 var assert = require('chai').assert;
 var colors = require('colors');
-var apiKey = process.env.npm_config_key;
+var apiKey = process.env.MOVIEDB_API_KEY || process.env.npm_config_key;
 var api;
 
 /**
