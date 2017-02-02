@@ -76,6 +76,7 @@
           , "Changes" : { "resource": "person/:id/changes", "method": "get" }
           , "Latest" : { "resource": "person/latest", "method": "get" }
           , "Popular" : { "resource": "person/popular", "method": "get" }
+          , "ExternalIds" : { "resource": "person/:id/external_ids", "method": "get" }
         }
       , "credit" : {
             "Info" : { "resource": "credit/:id", "method": "get" }
