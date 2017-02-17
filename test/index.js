@@ -71,5 +71,42 @@ describe('moviedb', function() {
             done();
         });
     });
+});
 
+describe('spam', function() {
+
+	this.timeout(30000);
+
+    it ('should not crash when spammed with requests', function(done) {
+		var requests = 50;
+		var requestsFinished = 0;
+
+		var callback = function (err){
+			if(requestsFinished < 0) return;
+			if(err) {
+				done(err);
+				requestsFinished = -1;
+				return;
+			}
+
+			requestsFinished++;
+			if(requestsFinished == requests){
+				done();
+			}
+		}
+
+		// wait for requestToken to finish
+		api.genreMovieList({}, function(err, res) {
+			for(var i = 0; i < requests; i++){
+				api.genreMovieList({}, function(err, res) {
+					if(err) return callback(err);
+
+					res.should.be.an('object');
+					res.should.have.property('genres');
+					res.genres.should.be.an('array');
+					callback();
+				})
+			}
+		})
+	});
 });
