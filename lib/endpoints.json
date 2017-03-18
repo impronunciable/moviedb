@@ -20,6 +20,7 @@
           , "List"  : { "resource": "search/list", "method": "get" }
           , "Company"  : { "resource": "search/company", "method": "get" }
           , "Keyword"  : { "resource": "search/keyword", "method": "get" }
+          , "TV"  : { "resource": "search/tv", "method": "get" }
         }
       , "collection" : {
             "Info"  : { "resource": "collection/:id", "method": "get" }
