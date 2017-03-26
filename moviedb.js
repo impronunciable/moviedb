@@ -111,6 +111,13 @@ module.exports={
           , "TopRatedTvs" : { "resource": "tv/top_rated", "method": "get" }
           , "PopularTvs" : { "resource": "tv/popular", "method": "get" }
       }
+      , "recommend": {
+            "Tv": { "resource": "tv/:id/recommendations", "method": "get" }
+          }
+      ,
+         "similar": {
+            "Tv": { "resource": "tv/:id/similar", "method": "get" }
+          }
     }
 }
 
