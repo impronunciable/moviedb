@@ -66,7 +66,8 @@ module.exports={
           , "EpisodeCredits" : { "resource": "tv/:id/season/:season_number/episode/:episode_number/credits", "method": "get" }
           , "EpisodeExternalIds" : { "resource": "tv/:id/season/:season_number/episode/:episode_number/external_ids", "method": "get" }
           , "EpisodeImages" : { "resource": "tv/:id/season/:season_number/episode/:episode_number/images", "method": "get" }
-        }
+          , "Recommend": { "resource": "tv/:id/recommendations", "method": "get" }
+          }
       , "person" : {
             "Info" : { "resource": "person/:id", "method": "get" }
           , "Credits" : { "resource": "person/:id/credits", "method": "get" }
@@ -111,13 +112,6 @@ module.exports={
           , "TopRatedTvs" : { "resource": "tv/top_rated", "method": "get" }
           , "PopularTvs" : { "resource": "tv/popular", "method": "get" }
       }
-      , "recommend": {
-            "Tv": { "resource": "tv/:id/recommendations", "method": "get" }
-          }
-      ,
-         "similar": {
-            "Tv": { "resource": "tv/:id/similar", "method": "get" }
-          }
     }
 }
 

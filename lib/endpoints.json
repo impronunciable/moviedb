@@ -65,7 +65,8 @@
           , "EpisodeImages" : { "resource": "tv/:id/season/:season_number/episode/:episode_number/images", "method": "get" }
           , "OnTheAir" : { "resource": "tv/on_the_air", "method": "get" }
           , "AiringToday" : { "resource": "tv/airing_today", "method": "get" }
-        }
+          , "recommend" : { "resource": "tv/:id/recommendations", "method": "get" }
+         }
       , "person" : {
             "Info" : { "resource": "person/:id", "method": "get" }
           , "MovieCredits" : { "resource": "person/:id/movie_credits", "method": "get" }
@@ -118,12 +119,6 @@
           , "ChangedPeople" : { "resource": "person/changes", "method": "get" }
           , "TopRatedTvs" : { "resource": "tv/top_rated", "method": "get" }
           , "PopularTvs" : { "resource": "tv/popular", "method": "get" }
-      }
-    , "recommend" : {
-        "Tv" : { "resource": "tv/:id/recommendations", "method": "get" }
-      },
-      "similar": {
-        "Tv": { "resource": "tv/:id/similar", "method": "get" }
       }
     }
 }
