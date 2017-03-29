@@ -65,7 +65,7 @@
           , "EpisodeImages" : { "resource": "tv/:id/season/:season_number/episode/:episode_number/images", "method": "get" }
           , "OnTheAir" : { "resource": "tv/on_the_air", "method": "get" }
           , "AiringToday" : { "resource": "tv/airing_today", "method": "get" }
-          , "recommend" : { "resource": "tv/:id/recommendations", "method": "get" }
+          , "Recommend" : { "resource": "tv/:id/recommendations", "method": "get" }
          }
       , "person" : {
             "Info" : { "resource": "person/:id", "method": "get" }
