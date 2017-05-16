@@ -41,6 +41,7 @@
           , "Trailers" : { "resource": "movie/:id/trailers", "method": "get" }
           , "Translations" : { "resource": "movie/:id/translations", "method": "get" }
           , "Similar" : { "resource": "movie/:id/similar_movies", "method": "get" }
+          , "Recommendations" : { "resource": "movie/:id/recommendations", "method": "get" }
           , "Reviews" : { "resource": "movie/:id/reviews", "method": "get" }
           , "Lists" : { "resource": "movie/:id/lists", "method": "get" }
           , "Changes" : { "resource": "movie/:id/changes", "method": "get" }
