@@ -45,7 +45,7 @@
           , "Lists" : { "resource": "movie/:id/lists", "method": "get" }
           , "Changes" : { "resource": "movie/:id/changes", "method": "get" }
           , "RatingUpdate" : { "resource": "movie/:id/rating", "method": "post" }
-          , "AllInfo" : { "resource": "movie/:id?append_to_reponse=alternative_titles,credits,images,videos,keywords,releases,release_dates,trailers,translations", "method": "get" }
+          , "AllInfo" : { "resource": "movie/:id?append_to_response=alternative_titles,credits,images,videos,keywords,releases,release_dates,trailers,translations", "method": "get" }
         }
       , "tv" : {
             "Info" : { "resource": "tv/:id", "method": "get" }
