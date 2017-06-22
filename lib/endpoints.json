@@ -67,9 +67,9 @@
           , "OnTheAir" : { "resource": "tv/on_the_air", "method": "get" }
           , "AiringToday" : { "resource": "tv/airing_today", "method": "get" }
           , "recommend" : { "resource": "tv/:id/recommendations", "method": "get" }
-          , "AllInfo" : { "resource": "tv/:id?append_to_response=credits,external_ids,images,videos,translations" }
-          , "AllSeasonInfo" : { "resource": "tv/:id/season/:season_number?append_to_response=credits,videos,external_ids,images" }
-          , "AllEpisodeInfo" : { "resource": "tv/:id/season/:season_number/episode/:episode_number?append_to_response=credits,external_ids,images" }
+          , "AllInfo" : { "resource": "tv/:id?append_to_response=credits,external_ids,images,videos,translations", "method": "get" }
+          , "AllSeasonInfo" : { "resource": "tv/:id/season/:season_number?append_to_response=credits,videos,external_ids,images", "method": "get" }
+          , "AllEpisodeInfo" : { "resource": "tv/:id/season/:season_number/episode/:episode_number?append_to_response=credits,external_ids,images", "method": "get" }
          }
       , "person" : {
             "Info" : { "resource": "person/:id", "method": "get" }
