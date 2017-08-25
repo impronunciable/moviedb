@@ -54,15 +54,18 @@
           , "Videos" : { "resource": "tv/:id/videos", "method": "get" }
           , "Similar" : { "resource": "tv/:id/similar", "method": "get" }
           , "Translations" : { "resource": "tv/:id/translations", "method": "get" }
+          , "Changes" : { "resource": "tv/:id/changes", "method": "get" }
           , "SeasonInfo" : { "resource": "tv/:id/season/:season_number", "method": "get" }
           , "SeasonCredits" : { "resource": "tv/:id/season/:season_number/credits", "method": "get" }
           , "SeasonVideos" : { "resource": "tv/:id/season/:season_number/videos", "method": "get" }
           , "SeasonExternalIds" : { "resource": "tv/:id/season/:season_number/external_ids", "method": "get" }
           , "SeasonImages" : { "resource": "tv/:id/season/:season_number/images", "method": "get" }
+          , "SeasonChanges" : { "resource": "tv/season/:id/changes", "method": "get" }
           , "EpisodeInfo" : { "resource": "tv/:id/season/:season_number/episode/:episode_number", "method": "get" }
           , "EpisodeCredits" : { "resource": "tv/:id/season/:season_number/episode/:episode_number/credits", "method": "get" }
           , "EpisodeExternalIds" : { "resource": "tv/:id/season/:season_number/episode/:episode_number/external_ids", "method": "get" }
           , "EpisodeImages" : { "resource": "tv/:id/season/:season_number/episode/:episode_number/images", "method": "get" }
+          , "EpisodeChanges" : { "resource": "tv/episode/:id/changes", "method": "get" }
           , "OnTheAir" : { "resource": "tv/on_the_air", "method": "get" }
           , "AiringToday" : { "resource": "tv/airing_today", "method": "get" }
           , "Recommend" : { "resource": "tv/:id/recommendations", "method": "get" }
