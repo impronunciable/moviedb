@@ -2,7 +2,7 @@
     "base_url": "https://api.themoviedb.org/3/"
   , "authentication" : {
         "requestToken" : "authentication/token/new"
-      , "sessionId" : "authentication/session/new"
+      , "session" : "authentication/session/new"
     }
   , "methods" : {
         "configuration" : {
