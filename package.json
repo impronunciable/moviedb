@@ -3,7 +3,8 @@
   "description": "Library for interacting with themoviedb.com API",
   "version": "0.2.10",
   "scripts": {
-    "test": "clear; make test"
+    "test": "clear; make test",
+    "lint": "./node_modules/.bin/standard"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "colors": "^1.1.2",
-    "mocha": "^3.1.2"
+    "mocha": "^3.1.2",
+    "standard": "^10.0.3"
   }
 }

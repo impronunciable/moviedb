@@ -1,2 +1,2 @@
 
-module.exports = require('./lib/moviedb');
+module.exports = require('./lib/moviedb')
