@@ -1,5 +1,5 @@
 
-var es = require('./lib/endpoints.json')
+var es = require('../lib/endpoints')
 
 var out = []
 out.push(['', 'API resource', 'Lib function name', 'HTTP method', ''].join('|'))
