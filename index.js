@@ -83,6 +83,13 @@ module.exports = class {
    */
   makeRequest(type, params, endpoint) {
     return new Promise((resolve, reject) => {
+      // Some endpoints have an optional account_id parameter (when there's a session).
+      // If it's not included, assume we want the current user's id,
+      // which is setting it to '{account_id}'
+      if (endpoint.indexOf(':id') !== -1 && !params.id && this.sessionId) {
+        params.id = '{account_id}'
+      }
+
       endpoint = endpoint.replace(':id', params.id).replace(':season_number', params.season_number).replace(':episode_number', params.episode_number)
       type = type.toUpperCase()
 

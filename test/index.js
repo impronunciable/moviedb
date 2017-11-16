@@ -4,6 +4,16 @@
 const assert = require('chai').assert
 const apiKey = process.env.MOVIEDB_API_KEY || process.env.npm_config_key
 const MovieDb = require('../index.js')
+
+// Include --sesion='{your session id}' to test the watchlist
+const sessionId = process.env.MOVIEDB_SESSION_ID || process.env.npm_config_session
+
+const haveValidGenericResponse = res => {
+  res.should.be.an('object')
+  res.should.have.property('results')
+  res.results.should.be.an('array')
+}
+
 require('chai').should()
 require('colors')
 
@@ -28,40 +38,43 @@ describe('moviedb', function () {
   // basic movie search
   it('should search for Zoolander', done => {
     api.searchMovie({ query: 'Zoolander' }).then(res => {
-      res.should.be.an('object')
-      res.should.have.property('results')
-      res.results.should.be.an('array')
+      haveValidGenericResponse(res)
       done()
     }).catch(done)
   })
 
   it('should get the tv shows airing today', done => {
     api.tvAiringToday().then(res => {
-      res.should.be.an('object')
-      res.should.have.property('results')
-      res.results.should.be.an('array')
+      haveValidGenericResponse(res)
       done()
     }).catch(done)
   })
 
   it('should get the tv shows OnTheAir', done => {
     api.tvOnTheAir().then(res => {
-      res.should.be.an('object')
-      res.should.have.property('results')
-      res.results.should.be.an('array')
+      haveValidGenericResponse(res)
       done()
     }).catch(done)
   })
 
   it('should get the movie release dates', done => {
     api.movieReleaseDates({ id: 209112 }).then(res => {
-      res.should.be.an('object')
-      res.should.have.property('results')
-      res.results.should.be.an('array')
+      haveValidGenericResponse(res)
       assert.equal(res.id, 209112)
       done()
     }).catch(done)
   })
+
+  if (sessionId) {
+    it(`should fetch the user's watchlist without including the account id in the call`, done => {
+      api.sessionId = sessionId
+
+      api.accountMovieWatchlist().then(res => {
+        haveValidGenericResponse(res)
+        done()
+      }).catch(done)
+    })
+  }
 
   it('should not get a rate limit error when a lot of requests are made within 10 seconds', done => {
     const requests = 50
