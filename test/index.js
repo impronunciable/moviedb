@@ -23,7 +23,7 @@ if (!apiKey || apiKey.length === 0) {
 const api = new MovieDb(apiKey)
 
 describe('moviedb', function () {
-  this.timeout(10000)
+  this.timeout(30000)
 
   // basic movie search
   it('should search for Zoolander', done => {
@@ -61,5 +61,22 @@ describe('moviedb', function () {
       assert.equal(res.id, 209112)
       done()
     }).catch(done)
+  })
+
+  it('should not get a rate limit error when a lot of requests are made within 10 seconds', done => {
+    const requests = 50
+    let finishedRequests = 0
+    let i = 0
+
+    // Requests need to be fired asynchronously
+    while (i < requests) {
+      api.discoverMovie().then(() => {
+        if (++finishedRequests === requests) {
+          done()
+        }
+      }).catch(done)
+
+      i++
+    }
   })
 })
