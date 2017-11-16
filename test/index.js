@@ -65,6 +65,14 @@ describe('moviedb', function () {
     }).catch(done)
   })
 
+  it(`should accept a non-object parameter if there's only one endpoint placeholder`, done => {
+    api.tvInfo(61888).then(res => {
+      res.should.be.an('object')
+      res.should.have.property('name')
+      done()
+    }).catch(done)
+  })
+
   if (sessionId) {
     it(`should fetch the user's watchlist without including the account id in the call`, done => {
       api.sessionId = sessionId

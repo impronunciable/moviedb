@@ -86,11 +86,24 @@ module.exports = class {
       // Some endpoints have an optional account_id parameter (when there's a session).
       // If it's not included, assume we want the current user's id,
       // which is setting it to '{account_id}'
-      if (endpoint.indexOf(':id') !== -1 && !params.id && this.sessionId) {
+      if (endpoint.indexOf(':id') !== -1 && params === {} && this.sessionId) {
         params.id = '{account_id}'
       }
 
-      endpoint = endpoint.replace(':id', params.id).replace(':season_number', params.season_number).replace(':episode_number', params.episode_number)
+      // Check params to see if params an object
+      // and if there is only one parameter in the endpoint
+      if (Object.keys(params).length === 0 && endpoint.split(':').length === 2) {
+        const parts = endpoint.split(':')
+        const index = parts[1].indexOf('/')
+
+        endpoint = parts[0] + params + (index === -1 ? '' : parts[1].substr(index))
+      }
+
+      // Iterate the keys of params and replace the endpoint sections
+      Object.keys(params).forEach(key => {
+        endpoint = endpoint.replace(`:${key}`, params[key])
+      })
+
       type = type.toUpperCase()
 
       let req = request(type, this.baseUrl + endpoint)
