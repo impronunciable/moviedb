@@ -3,7 +3,7 @@
   "description": "Library for interacting with themoviedb.com API",
   "version": "0.2.10",
   "scripts": {
-    "test": "clear; make test",
+    "test": "./node_modules/.bin/mocha --reporter spec",
     "lint": "./node_modules/.bin/standard"
   },
   "repository": {
