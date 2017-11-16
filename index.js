@@ -6,7 +6,7 @@ const limits = require('limits.js')
 const throttle = limits().within(10 * 1000, 39)
 
 module.exports = class {
-  constructor(apiKey, baseUrl = 'https://api.themoviedb.org/3/') {
+  constructor (apiKey, baseUrl = 'https://api.themoviedb.org/3/') {
     if (!apiKey) {
       throw new Error('Bad api key')
     }
@@ -36,7 +36,7 @@ module.exports = class {
    *
    * @returns {Promise}
    */
-  requestToken() {
+  requestToken () {
     return new Promise((resolve, reject) => {
       request
         .get(this.baseUrl + endpoints.authentication.requestToken)
@@ -57,7 +57,7 @@ module.exports = class {
    *
    * @returns {Promise}
    */
-  session() {
+  session () {
     return new Promise((resolve, reject) => {
       request
         .get(this.baseUrl + endpoints.authentication.session)
@@ -81,7 +81,7 @@ module.exports = class {
    * @param {String} endpoint The api endpoint relative to the base url
    * @returns {Promise}
    */
-  makeRequest(type, params, endpoint) {
+  makeRequest (type, params, endpoint) {
     return new Promise((resolve, reject) => {
       // Some endpoints have an optional account_id parameter (when there's a session).
       // If it's not included, assume we want the current user's id,
