@@ -68,7 +68,7 @@ module.exports = class {
           }
 
           this.sessionId = res.body.session_id
-          resolve()
+          resolve(this.sessionId)
         })
     })
   }
