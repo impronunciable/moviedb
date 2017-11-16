@@ -47,7 +47,7 @@ module.exports = class {
           }
 
           this.token = res.body
-          resolve()
+          resolve(this.token.request_token)
         })
     })
   }
