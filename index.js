@@ -53,7 +53,7 @@ module.exports = class {
   }
 
   /**
-   * Gets the session token
+   * Gets the session id
    *
    * @returns {Promise}
    */
