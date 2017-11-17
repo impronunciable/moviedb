@@ -92,7 +92,7 @@ module.exports = class {
 
       // Check params to see if params an object
       // and if there is only one parameter in the endpoint
-      if (Object.keys(params).length === 0 && endpoint.split(':').length === 2) {
+      if (typeof params !== 'object' && endpoint.split(':').length === 2) {
         const parts = endpoint.split(':')
         const index = parts[1].indexOf('/')
 
@@ -100,9 +100,11 @@ module.exports = class {
       }
 
       // Iterate the keys of params and replace the endpoint sections
-      Object.keys(params).forEach(key => {
-        endpoint = endpoint.replace(`:${key}`, params[key])
-      })
+      if (typeof params === 'object') {
+        Object.keys(params).forEach(key => {
+          endpoint = endpoint.replace(`:${key}`, params[key])
+        })
+      }
 
       type = type.toUpperCase()
 
