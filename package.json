@@ -3,7 +3,8 @@
   "description": "Library for interacting with themoviedb.com API",
   "version": "0.2.10",
   "scripts": {
-    "test": "clear; make test"
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "lint": "./node_modules/.bin/standard"
   },
   "repository": {
     "type": "git",
@@ -25,11 +26,13 @@
   "main": "index.js",
   "author": "Dan Zajdband <dan.zajdband@gmail.com>",
   "dependencies": {
+    "limits.js": "^0.1.4",
     "superagent": "^2.3.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "colors": "^1.1.2",
-    "mocha": "^3.1.2"
+    "mocha": "^3.1.2",
+    "standard": "^10.0.3"
   }
 }
