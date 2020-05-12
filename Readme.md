@@ -5,6 +5,8 @@ MovieDB
 [![Dependency Status](https://img.shields.io/david/impronunciable/moviedb.svg)](https://david-dm.org/impronunciable/moviedb)
 [![npm](https://img.shields.io/npm/dm/moviedb.svg?maxAge=2592000)]()
 
+**Deprecation notice:** This package is no longer maintained. Please use the [moviedb-promise](https://github.com/grantholle/moviedb-promise) package.
+
 node.js library that makes the interaction with themoviedb.org V3 API easy.
 
 ## Installation
