@@ -25,6 +25,7 @@
   "main": "index.js",
   "author": "Dan Zajdband <dan.zajdband@gmail.com>",
   "dependencies": {
+    "limits.js": "^0.1.4",
     "superagent": "^2.3.0"
   },
   "devDependencies": {
